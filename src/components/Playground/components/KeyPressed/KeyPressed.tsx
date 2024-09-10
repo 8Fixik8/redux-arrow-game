@@ -4,7 +4,7 @@ import { useCallback, useEffect } from "react"
 
 import { setEnteredValue } from "../../store/slices"
 import { MAP_ARROW_CODES } from "../../constants"
-import { useAppDispatch, useAppSelector } from "../../../../app/hooks"
+import { useAppDispatch } from "../../../../app/hooks"
 import { useKeyPressedElement } from "./hooks"
 
 export interface IKeyPressedProps {

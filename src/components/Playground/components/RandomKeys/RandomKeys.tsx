@@ -1,28 +1,26 @@
 // import styles from "./RandomKeys.module.css"
 
-import { useAppDispatch, useAppSelector } from "../../../../app/hooks"
-import { MAP_ARROW_CODES } from "../../constants"
-import { setSteps } from "../../store/slices"
-import { IMapArrCodes } from "../../types"
+import { useAppSelector } from "../../../../app/hooks"
+import RandomArrows from "./components/RandomArrows"
+import WelcomeText from "./components/WelcomeText"
 
 export interface IRandomKeysProps {
   isTimerActive: boolean
 }
 
 const RandomKeys: React.FC<IRandomKeysProps> = (props) => {
-  // const {isTimerActive} = props
+  const { isTimerActive } = props
 
   const state = useAppSelector((state) => state.playground)
 
-  console.log(state.steps)
-
   return (
     <div>
-      {state.steps.map((step) => (
-        <span key={step.step}>
-          {MAP_ARROW_CODES[step.currentValue as keyof IMapArrCodes]}
-        </span>
-      ))}
+      <h3>Random Keys</h3>
+      {state.steps.length === 0 ? (
+        <WelcomeText isTimerActive={isTimerActive} />
+      ) : (
+        <RandomArrows />
+      )}
     </div>
   )
 }

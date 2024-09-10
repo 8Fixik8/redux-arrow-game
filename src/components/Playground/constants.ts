@@ -1,6 +1,6 @@
-import { IMapArrCodes } from "./types"
+import { IEndGameConditions, IMapArrCodes } from "./types"
 
-export const INTERVAL_TIME = 4000
+export const INTERVAL_TIME = 2000
 
 export const MAP_ARROW_CODES: IMapArrCodes = {
   ArrowUp: "⬆️",
@@ -10,3 +10,8 @@ export const MAP_ARROW_CODES: IMapArrCodes = {
 }
 
 export const ARR_ARROW_CODES = Object.keys(MAP_ARROW_CODES)
+
+export const END_GAME_CONDITIONS: IEndGameConditions = {
+  SUCCESS_COUNT: 3,
+  UNSUCCESS_COUNT: 3,
+}
