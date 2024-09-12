@@ -6,6 +6,8 @@ import { setEnteredValue } from "../../store/slices"
 import { MAP_ARROW_CODES } from "../../constants"
 import { useAppDispatch } from "../../../../app/hooks"
 import { useKeyPressedElement } from "./hooks"
+import { TypographyHeader } from "../../../UI"
+import TypographyText from "../../../UI/TypographyText"
 
 export interface IKeyPressedProps {
   isTimerActive: boolean
@@ -37,7 +39,10 @@ const KeyPressed: React.FC<IKeyPressedProps> = (props) => {
 
   return (
     <div>
-      <h3>Key Pressed</h3>
+      <TypographyHeader>Key Pressed</TypographyHeader>
+      <TypographyText>
+        Press the key corresponding to the key in "Random keys"
+      </TypographyText>
       <span>{keyPressedElement}</span>
     </div>
   )

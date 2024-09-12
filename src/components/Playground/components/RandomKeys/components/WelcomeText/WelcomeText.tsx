@@ -1,5 +1,7 @@
 // import styles from "./WelcomeText.module.css"
 
+import TypographyText from "../../../../../UI/TypographyText"
+
 export interface IWelcomeTextProps {
   isTimerActive: boolean
 }
@@ -10,9 +12,9 @@ const WelcomeText: React.FC<IWelcomeTextProps> = (props) => {
   return (
     <>
       {!isTimerActive ? (
-        <span>Press "Start" to start game</span>
+        <TypographyText>Press "Start" to start game</TypographyText>
       ) : (
-        <span>loading</span>
+        <span>loading...</span>
       )}
     </>
   )

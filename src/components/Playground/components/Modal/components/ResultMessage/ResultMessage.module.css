@@ -1,0 +1,8 @@
+.wrapper {
+  color: var(--color-gray-light);
+}
+
+.text {
+  text-align: center;
+  user-select: none;
+}

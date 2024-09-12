@@ -1,0 +1,24 @@
+.conteiner {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  margin: 10% auto;
+  gap: 3px;
+  box-shadow: 10px 10px 100px 0px rgba(53, 0, 116, 0.2);
+  background-image: -webkit-linear-gradient(
+    right bottom,
+    #162454,
+    #533389,
+    #0a9ed8,
+    #7a359f
+  );
+  padding: 3px;
+  border-radius: var(--border-radius);
+}
+
+.column {
+  width: 50%;
+  padding: var(--spacing-large);
+  background: var(--color-gray-light);
+  border-radius: var(--border-radius);
+}

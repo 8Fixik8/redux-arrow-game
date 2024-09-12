@@ -1,4 +1,6 @@
 import styles from "./Button.module.css"
+import cn from "classnames"
+
 import {
   Button as MuiButton,
   ButtonProps as MuiButtonProps,
@@ -6,14 +8,14 @@ import {
 export interface IButtonProps extends MuiButtonProps {}
 
 const Button: React.FC<IButtonProps> = (props) => {
-  const { children } = props
+  const { children, className = "" } = props
 
   return (
     <MuiButton
       variant="contained"
       size="small"
-      className={styles.button}
       {...props}
+      className={cn(styles.button, className)}
     >
       {children}
     </MuiButton>

@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+}
+
+.modal {
+  padding: var(--spacing-large);
+  border-radius: var(--border-radius);
+  background-color: var(--color-gray);
+  box-shadow: var(--box-shadow);
+}
+
+.modalSuccess {
+  background-color: var(--color-green);
+  border: 3px solid var(--color-green-light);
+}
+
+.modalUnsuccess {
+  background-color: var(--color-red-dark);
+  border: 3px solid var(--color-red-light);
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--color-gray-light);
+  color: var(--color-black-lighter);
+}
