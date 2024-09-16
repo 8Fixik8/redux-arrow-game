@@ -1,4 +1,4 @@
 # URL
 
-https://8fixik8.github.io/redux-arrow-game/
+https://kim5possible.github.io/redux-arrow-game/
 
