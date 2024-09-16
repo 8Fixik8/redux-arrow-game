@@ -13,5 +13,5 @@ export const useKeyPressedElement = (): string => {
     }
   }
 
-  return "⌛"
+  return "🔄"
 }

@@ -1,4 +1,4 @@
-// import styles from "./KeyPressed.module.css"
+import styles from "./KeyPressed.module.css"
 
 import { useCallback, useEffect } from "react"
 
@@ -40,10 +40,15 @@ const KeyPressed: React.FC<IKeyPressedProps> = (props) => {
   return (
     <div>
       <TypographyHeader>Key Pressed</TypographyHeader>
-      <TypographyText>
-        Press the key corresponding to the key in "Random keys"
-      </TypographyText>
-      <span>{keyPressedElement}</span>
+
+      <div className={styles.container}>
+        <TypographyText>
+          Press the key corresponding to the key in "Random keys"
+        </TypographyText>
+      </div>
+      <div className={styles.wrapper}>
+        <span className={styles.icon}>{keyPressedElement}</span>
+      </div>
     </div>
   )
 }

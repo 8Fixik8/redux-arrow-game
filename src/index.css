@@ -5,15 +5,19 @@
   --color-gray-dark: #515151;
   --color-black-lighter: #2f2f2f;
 
-  --color-green-light: #b3e9b8;
+  --color-green-light: #a3ffd1;
   --color-green: #13fa60;
   --color-green-dark: #0fb81a;
 
   --color-red-lighter: #efd8ca;
-  --color-red-light: #d67d7d;
+  --color-red-light: #f0a699;
   --color-red-dark: #e06363;
 
   --color-yellow-darker: #d3e35f;
+
+  --color-purple-lighter: #f0e6ff;
+  --color-purple-light: #bca0ff;
+  --color-purple: #815eff;
 
   --spacing-medium: 16px;
   --spacing-large: 20px;
@@ -29,10 +33,13 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: var(--spacing-large);
+  overflow: hidden;
   font-size: 16px;
   line-height: 1.7;
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
   background-color: var(--color-gray-light);
 }
